@@ -38,6 +38,9 @@ public class Validacion {
                 break;
             }
         }
+      
+        Ruleta r= new Ruleta();
+        r.ruleta(numero);
 
         System.out.println("\n\t\tFIN DE PROGRAMA");
     }
