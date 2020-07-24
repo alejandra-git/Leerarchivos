@@ -17,26 +17,28 @@ public class Validacion {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-    
-		Scanner teclado = new Scanner(System.in);
- 
-		String cadena = " ";
- 
-		while (!cadena.isEmpty())
-		{
-			System.out.print("Introduzca cadena a comprobar (Cadena vacia = FIN): ");
-			cadena = teclado.nextLine();
-			if (esSoloLetras(cadena))
-				System.out.println("La cadena SOLO contiene letras\n");
-			else
-				System.out.println("La cadena tiene caracteres que NO son letras\n");
-		}
- 
-		System.out.println("\n\t\tFIN DE PROGRAMA");
-		teclado.close();
- 
-	}
-    
-    
+  public static void main(String[] args) {
+        // TODO code application logic here
+
+        LecturaEscritura les = new LecturaEscritura("Prueba.txt");
+
+        les.escribirArchivo("hola");
+
+        String cadena = les.leerArchivo();
+        cadena= cadena.replace("\n", "");
+        
+        int numero= cadena.length();
+
+        while (!cadena.isEmpty()) {
+            if (esSoloLetras(cadena)) {
+                System.out.println("La cadena SOLO contiene letras\n");
+                break;
+            } else {
+                System.out.println("La cadena tiene caracteres que NO son letras\n");
+                break;
+            }
+        }
+
+        System.out.println("\n\t\tFIN DE PROGRAMA");
+    }
 }
