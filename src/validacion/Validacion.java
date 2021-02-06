@@ -6,6 +6,7 @@
 package validacion;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 import static validacion.SoloLetras.esSoloLetras;
 
 /**
@@ -31,7 +32,7 @@ public class Validacion {
 
         while (!cadena.isEmpty()) {
             if (esSoloLetras(cadena)) {
-                System.out.println("La cadena SOLO contiene letras\n");
+                JOptionPane.showMessageDialog(null, "No contiene números");
                 break;
             } else {
                 System.out.println("La cadena tiene caracteres que NO son letras\n");
