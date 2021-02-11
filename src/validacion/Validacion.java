@@ -35,7 +35,7 @@ public class Validacion {
                 JOptionPane.showMessageDialog(null, "No contiene números");
                 break;
             } else {
-                System.out.println("La cadena tiene caracteres que NO son letras\n");
+                JOptionPane.showMessageDialog(null, "La cadena tiene caracteres que NO son letras");
                 break;
             }
         }
