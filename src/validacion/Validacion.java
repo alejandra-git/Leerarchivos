@@ -32,7 +32,7 @@ public class Validacion {
 
         while (!cadena.isEmpty()) {
             if (esSoloLetras(cadena)) {
-                JOptionPane.showMessageDialog(null, "No contiene números");
+                JOptionPane.showMessageDialog(null, "dfjvnrfivjnrfvijnrvr");
                 break;
             } else {
                 JOptionPane.showMessageDialog(null, "La cadena tiene caracteres que NO son letras");
